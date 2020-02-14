@@ -1,6 +1,6 @@
-//app.js
+import request from './utils/requests.js';
+
 App({
-  globalData: {
-    userInfo: null
-  }
-})
+  curl: request,
+  user: {}, // User Info
+});
