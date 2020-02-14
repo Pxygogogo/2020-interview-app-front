@@ -1,12 +1,33 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "components/article/index",
+    "components/avatar/index",
+    "pages/search-nav/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "面面俱到",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#cdcdcd",
+    "selectedColor": "#000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/icons/index.png",
+        "selectedIconPath": "/images/icons/selectedIndex.png"
+      },
+      {
+        "pagePath": "pages/search-nav/index",
+        "text": "搜索",
+        "iconPath": "/images/icons/search.png",
+        "selectedIconPath": "/images/icons/selectedSearch.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

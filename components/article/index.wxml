@@ -1,0 +1,15 @@
+<view class="article-box">
+	<view class="userInfo">
+		<view class="left-avatar">
+			<image src="../../images/tencent.png"></image>
+		</view>
+		<view class="right">
+			<view class="nickname">{{model.nickName}}</view>
+			<view class="last-reply">最后回复 {{model.last}}前</view>
+		</view>
+	</view>
+	<view class="abstract">
+		<view class="article-title">{{model.title}}</view>
+		<view class="desc"><text>{{model.desc}}</text></view>
+	</view>
+</view>

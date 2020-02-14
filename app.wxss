@@ -1,0 +1,18 @@
+
+.marginTopBottom {
+  margin-top: 20rpx;
+  margin-bottom: 30rpx;
+}
+
+.title{
+  border-left: 5px solid #00B26A;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+view{
+  box-sizing: border-box;
+}
+

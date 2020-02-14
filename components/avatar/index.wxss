@@ -1,0 +1,32 @@
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.avatar-box{
+  width: 20%;
+  height: 200rpx;
+  padding: 10rpx;
+  padding-top: 20rpx;
+}
+
+.img-box{
+  display: flex;
+  justify-content: center;
+  padding: 5rpx;
+}
+
+.avatar-box image{
+  width: 90rpx;
+  height: 90rpx;
+}
+
+.avatar-box text{
+  margin-top: 8rpx;
+  display: block;
+  text-align: center;
+  font-size: 12px;
+}

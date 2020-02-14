@@ -1,0 +1,19 @@
+<view>
+	<view class="title">热门企业</view>
+	<view class="container">
+		<view class="avatar-box">
+			<view class="img-box">
+				<image src="../../images/tencent.png"></image>
+			</view>
+			<text>{{model.name}}</text>
+			<text>共{{model.postCount}}篇</text>
+		</view>
+		<view class="avatar-box">
+			<view class="img-box">
+				<image src="../../images/tencent.png"></image>
+			</view>
+			<text>{{model.name}}</text>
+			<text>共{{model.postCount}}篇</text>
+		</view>
+	</view>
+</view>

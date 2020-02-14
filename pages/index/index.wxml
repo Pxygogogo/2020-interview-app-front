@@ -1,5 +1,16 @@
-<view class="container">
+<!-- <view class="container">
   <button type="primary" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="handleLogin">登录</button>
 
   <button bindtap="handleFetchUserInfo">获取用户信息</button>
+</view> -->
+<view class="nav">
+	<avatar></avatar>
+</view>
+<view class="separate">
+</view>
+<view class="body">
+	<article></article>
+	<article></article>
+	<article></article>
+
 </view>
