@@ -1,19 +1,69 @@
-<view>
-	<view class="title">热门企业</view>
-	<view class="container">
-		<view class="avatar-box">
-			<view class="img-box">
-				<image src="../../images/tencent.png"></image>
-			</view>
-			<text>{{model.name}}</text>
-			<text>共{{model.postCount}}篇</text>
+<view class="container">
+	<view class="avatar-box">
+		<view class="img-box">
+			<image src="../../images/tencent.png"></image>
 		</view>
-		<view class="avatar-box">
-			<view class="img-box">
-				<image src="../../images/tencent.png"></image>
-			</view>
-			<text>{{model.name}}</text>
-			<text>共{{model.postCount}}篇</text>
+		<text>{{model.name}}</text>
+		<text>共{{model.postCount}}篇</text>
+	</view>
+	<view class="avatar-box">
+		<view class="img-box">
+			<image src="../../images/tencent.png"></image>
 		</view>
+		<text>{{model.name}}</text>
+		<text>共{{model.postCount}}篇</text>
+	</view>
+		<view class="avatar-box">
+		<view class="img-box">
+			<image src="../../images/tencent.png"></image>
+		</view>
+		<text>{{model.name}}</text>
+		<text>共{{model.postCount}}篇</text>
+	</view>
+	<view class="avatar-box">
+		<view class="img-box">
+			<image src="../../images/tencent.png"></image>
+		</view>
+		<text>{{model.name}}</text>
+		<text>共{{model.postCount}}篇</text>
+	</view>	<view class="avatar-box">
+		<view class="img-box">
+			<image src="../../images/tencent.png"></image>
+		</view>
+		<text>{{model.name}}</text>
+		<text>共{{model.postCount}}篇</text>
+	</view>
+	<view class="avatar-box">
+		<view class="img-box">
+			<image src="../../images/tencent.png"></image>
+		</view>
+		<text>{{model.name}}</text>
+		<text>共{{model.postCount}}篇</text>
+	</view>	<view class="avatar-box">
+		<view class="img-box">
+			<image src="../../images/tencent.png"></image>
+		</view>
+		<text>{{model.name}}</text>
+		<text>共{{model.postCount}}篇</text>
+	</view>
+	<view class="avatar-box">
+		<view class="img-box">
+			<image src="../../images/tencent.png"></image>
+		</view>
+		<text>{{model.name}}</text>
+		<text>共{{model.postCount}}篇</text>
+	</view>
+		<view class="avatar-box">
+		<view class="img-box">
+			<image src="../../images/tencent.png"></image>
+		</view>
+		<text>{{model.name}}</text>
+		<text>共{{model.postCount}}篇</text>
+	</view>
+	<view class="avatar-box">
+		<view class="img-box">
+			<image src="../../images/icons/more.svg"></image>
+		</view>
+		<text>更多</text>
 	</view>
 </view>

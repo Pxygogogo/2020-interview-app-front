@@ -57,6 +57,7 @@
 .desc {
   height: 95rpx;
   font-size: 14px;
+  color: #c1c2c3;
   padding: 15rpx;
   display: -webkit-box;
   overflow: hidden;

@@ -3,8 +3,10 @@
 
   <button bindtap="handleFetchUserInfo">获取用户信息</button>
 </view> -->
+<view class="title">热门企业</view>
 <view class="nav">
-	<avatar></avatar>
+	<avatar>
+	</avatar>
 </view>
 <view class="separate">
 </view>
@@ -12,5 +14,6 @@
 	<article></article>
 	<article></article>
 	<article></article>
+	
 
 </view>

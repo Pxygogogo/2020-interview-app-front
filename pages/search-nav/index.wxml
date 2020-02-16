@@ -1,1 +1,13 @@
-<search></search>
+<!-- 搜索框 -->
+<view class="search">
+	<view class="search-left">
+    <image class="icon-search" src="../../images/icons/search.svg"></image>
+		<input placeholder="搜索你想看的面经">
+    </input>
+	</view>
+</view>
+
+<view>
+<avatar></avatar>
+
+</view>
