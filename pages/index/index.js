@@ -2,7 +2,7 @@ const app = getApp();
 
 Page({
   data: {
-    uri: '/hot-company'
+    uri: '/api/hot-company'
   },
 
 
@@ -23,7 +23,8 @@ Page({
     wx.login({
       async success({ code }) {
         const res = await app.curl.post('/auth/login', { code, userInfo: detail.userInfo });
-        if (res.code === 0) {
+        console.log(res)
+        if (res.code === 0) {console.log(res)
           wx.showToast({
             title: '登录成功',
             icon: 'success'
