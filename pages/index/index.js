@@ -2,7 +2,13 @@ const app = getApp();
 
 Page({
   data: {
+    uri: '/hot-company'
+  },
 
+
+  showTab(e) {
+    console.log('this i s ');
+    console.log(e.detail)
   },
 
   handleLogin({ detail }) {
@@ -39,5 +45,8 @@ Page({
   async handleFetchUserInfo() {
     const res = await app.curl.get('/users/current-user');
     console.log(res);
+  },
+  onLoad(){
+    
   }
 })

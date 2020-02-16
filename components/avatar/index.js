@@ -1,69 +1,46 @@
 // components/avater/index.js
-Page({
+const app = getApp();
+Component({
 
-  /**
-   * 页面的初始数据
-   */
-  data: {
-    model:{
-      name:"腾讯",
-      postCount:1706,
+  properties: {
+    uri: {
+      type: String,
+      value: '',
+      observer: function (newVal, oldVal) {
+        this.propertiesChange(newVal, oldVal);
+      }
     }
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  data: {
+    model: [],
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  methods: { 
+    async propertiesChange(newVal, oldVal) {
+      const res = await app.curl.get(newVal)
+      console.log(res)
+      // let data = res.data.planCommunitys.slice(0, 6);
+      this.setData({
+        'model': res.data.planCommunitys.slice(0, 9),
+      })
+    },
   },
+  
+  lifetimes: {
+    created(){
+      console.log(this.properties.uri)
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
+      // this.fetchCompany();
+    },
 
+    attached() {
+      
+    },
+    ready() {
+   
+    },
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
+ 
+  
+  
 })

@@ -32,3 +32,19 @@
   width: 10%;
   height: 50rpx;
 }
+
+
+.hot-position{
+  height: 400rpx;
+  width: 100%;
+  padding: 20rpx;
+  padding-left: 0;
+}
+
+
+.hot-company{
+  width: 100%;
+  min-height: 500rpx;
+  padding: 20rpx;
+  padding-left: 0;
+}

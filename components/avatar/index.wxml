@@ -1,69 +1,11 @@
 <view class="container">
-	<view class="avatar-box">
-		<view class="img-box">
-			<image src="../../images/tencent.png"></image>
-		</view>
-		<text>{{model.name}}</text>
-		<text>共{{model.postCount}}篇</text>
-	</view>
-	<view class="avatar-box">
-		<view class="img-box">
-			<image src="../../images/tencent.png"></image>
-		</view>
-		<text>{{model.name}}</text>
-		<text>共{{model.postCount}}篇</text>
-	</view>
-		<view class="avatar-box">
-		<view class="img-box">
-			<image src="../../images/tencent.png"></image>
-		</view>
-		<text>{{model.name}}</text>
-		<text>共{{model.postCount}}篇</text>
-	</view>
-	<view class="avatar-box">
-		<view class="img-box">
-			<image src="../../images/tencent.png"></image>
-		</view>
-		<text>{{model.name}}</text>
-		<text>共{{model.postCount}}篇</text>
-	</view>	<view class="avatar-box">
-		<view class="img-box">
-			<image src="../../images/tencent.png"></image>
-		</view>
-		<text>{{model.name}}</text>
-		<text>共{{model.postCount}}篇</text>
-	</view>
-	<view class="avatar-box">
-		<view class="img-box">
-			<image src="../../images/tencent.png"></image>
-		</view>
-		<text>{{model.name}}</text>
-		<text>共{{model.postCount}}篇</text>
-	</view>	<view class="avatar-box">
-		<view class="img-box">
-			<image src="../../images/tencent.png"></image>
-		</view>
-		<text>{{model.name}}</text>
-		<text>共{{model.postCount}}篇</text>
-	</view>
-	<view class="avatar-box">
-		<view class="img-box">
-			<image src="../../images/tencent.png"></image>
-		</view>
-		<text>{{model.name}}</text>
-		<text>共{{model.postCount}}篇</text>
-	</view>
-		<view class="avatar-box">
-		<view class="img-box">
-			<image src="../../images/tencent.png"></image>
-		</view>
-		<text>{{model.name}}</text>
-		<text>共{{model.postCount}}篇</text>
-	</view>
-	<view class="avatar-box">
-		<view class="img-box">
-			<image src="../../images/icons/more.svg"></image>
-		</view>
-		<text>更多</text>
-	</view>
+  <view wx:for="{{model}}" wx:key="name" class="avatar-box">
+    <view class="img-box">
+      <image src="{{item.iconUrl}}" class="img"></image>
+    </view>
+    
+    <text>{{item.name}}</text>
+    <text>共{{item.postCount}}篇</text>
+  </view>
+  <slot></slot>
 </view>

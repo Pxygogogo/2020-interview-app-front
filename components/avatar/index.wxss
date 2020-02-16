@@ -19,7 +19,7 @@
   padding: 5rpx;
 }
 
-.avatar-box image{
+.img{
   width: 90rpx;
   height: 90rpx;
 }

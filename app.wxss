@@ -16,3 +16,34 @@ view{
   box-sizing: border-box;
 }
 
+
+.separate{
+  width: 100%;
+  height: 30rpx;
+  background-color: #dfdfdf;
+}
+
+
+/* avatar组件 */
+.avatar-box{
+  width: 20%;
+  height: 200rpx;
+  padding: 10rpx;
+  padding-top: 20rpx;
+}
+
+.img-box{
+  display: flex;
+  justify-content: center;
+  padding: 5rpx;
+}
+.img{
+  width: 90rpx;
+  height: 90rpx;
+}
+.avatar-box text{
+  margin-top: 8rpx;
+  display: block;
+  text-align: center;
+  font-size: 12px;
+}

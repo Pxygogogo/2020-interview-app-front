@@ -1,9 +1,9 @@
 {
   "pages": [
-    "pages/search-nav/index",
     "pages/index/index",
-    "components/article/index",
-    "components/avatar/index"
+    "components/avatar/index",
+    "pages/search-nav/index",
+    "components/article/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
