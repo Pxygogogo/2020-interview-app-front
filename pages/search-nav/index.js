@@ -7,5 +7,14 @@ Page({
     isTotal:true,
     hotJobUri:'/api/hot-job'
   },
+  methods:{
+    
+  },
+  
+  goToSearch(){
+    wx.navigateTo({
+      url: '/pages/search/index',
+    })
+  }
  
 })

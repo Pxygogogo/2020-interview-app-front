@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/index/index",
+    "pages/search/index",
     "pages/search-nav/index",
     "pages/company-info/index",
-    "pages/index/index",
     "pages/discuss-info/index",
     "pages/login/index",
     "components/avatar/index",

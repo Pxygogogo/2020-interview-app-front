@@ -1,6 +1,21 @@
-<view class="title" >腾讯</view>
+<view class="title" >{{companyName}}</view>
 <view class="body">
-  <article companyUri="{{companyUri}}" page="{{page}}" ></article>
+  <!-- <article companyUri="{{companyUri}}" companyId="" ></article> -->
+  <view class="article-box {{showId == item.postId ? 'active' : ''}}" wx:for="{{model}}" wx:key="postTitle" bindtap="handleDiscussInfo" data-id="{{item.postId}}">
+	<view class="userInfo">
+		<view class="left-avatar">
+			<image src="{{item.authorHead}}"></image>
+		</view>
+		<view class="right">
+			<view class="nickname">{{item.author}}</view>
+			<view class="last-reply">最后回复 {{item.recentDisplayTime}}前</view>
+		</view>
+	</view>
+	<view class="abstract">
+		<view class="article-title"><text>{{item.postTitle}}</text></view>
+		<view class="desc"><text>{{item.content}}...</text></view>
+	</view>
+</view>
 </view>
 
 

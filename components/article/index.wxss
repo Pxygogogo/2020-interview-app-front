@@ -1,6 +1,8 @@
+/* article组件 */
 .article-box {
   width: 100%;
   border-bottom: 1px solid #e8eaec;
+  margin-top: 20rpx;
 }
 
 .userInfo {
@@ -59,4 +61,13 @@
 
 .active{
   background-color: #f8f8f9;
+}
+
+
+.title{
+  border-left: 5px solid #00B26A;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
 }

@@ -1,5 +1,5 @@
 <view class="container" >
-  <view wx:for="{{model}}" wx:key="name" class="avatar-box {{showId == item.id ? 'active' : ''}}" bindtap="handleDiscussInfo" data-id="{{item.id}}">
+  <view wx:for="{{model}}" wx:key="name" class="avatar-box {{showId == item.id ? 'active' : ''}}" bindtap="handleCompanyInfo" data-id="{{item.id}}">
     <view class="img-box">
       <image src="{{item.iconUrl}}" class="img"></image>
     </view>

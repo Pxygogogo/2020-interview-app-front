@@ -1,5 +1,5 @@
 <!-- 搜索框 -->
-<view class="search">
+<view class="search" bindtap="goToSearch">
   <view class="search-left">
     <image class="icon-search" src="../../images/icons/search.svg"></image>
     <input placeholder="搜索你想看的面经">
