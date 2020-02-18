@@ -1,12 +1,8 @@
-<view class="container">
-  <button type="primary" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="handleLogin">登录</button>
 
-  <button bindtap="handleFetchUserInfo">获取用户信息</button>
-</view>
-<view class="title">热门企业</view>
+<view class="title" >热门企业</view>
 <view class="nav">
-  <avatar uri="{{uri}}" bind:showTab="showTab">
-    <view class="avatar-box">
+  <avatar uri="{{uri}}" isTotal="{{isTotal}}" bind:showTab="showTab">
+    <view class="avatar-box" bindtap="goToMore" >
       <view class="img-box">
         <image src="../../images/icons/more.svg" class="img"></image>
       </view>
@@ -17,9 +13,5 @@
 <view class="separate">
 </view>
 <view class="body">
-  <article></article>
-  <article></article>
-  <article></article>
-
-
+  <article articleUri="{{articleUri}}" page="{{page}}" ></article>
 </view>

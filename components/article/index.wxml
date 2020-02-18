@@ -1,15 +1,15 @@
-<view class="article-box">
+<view class="article-box {{showId == item.postId ? 'active' : ''}}" wx:for="{{model}}" wx:key="postTitle" bindtap="handleDiscussInfo" data-id="{{item.postId}}">
 	<view class="userInfo">
 		<view class="left-avatar">
-			<image src="../../images/tencent.png"></image>
+			<image src="{{item.authorHead}}"></image>
 		</view>
 		<view class="right">
-			<view class="nickname">{{model.nickName}}</view>
-			<view class="last-reply">最后回复 {{model.last}}前</view>
+			<view class="nickname">{{item.author}}</view>
+			<view class="last-reply">最后回复 {{item.recentDisplayTime}}前</view>
 		</view>
 	</view>
 	<view class="abstract">
-		<view class="article-title">{{model.title}}</view>
-		<view class="desc"><text>{{model.desc}}</text></view>
+		<view class="article-title"><text>{{item.postTitle}}</text></view>
+		<view class="desc"><text>{{item.content}}...</text></view>
 	</view>
 </view>

@@ -1,0 +1,32 @@
+
+<view class="container">
+  <view class="discuss-title">{{model.postTitle}}</view>
+  <view class="userInfo">
+    <view class="left-avatar">
+      <image src="{{model.authorHead}}"></image>
+    </view>
+    <view class="middle-info">
+      <view class="author">{{model.author}}</view>
+      <view class="release-time">{{model.createTime}}</view>
+    </view>
+    <view class="right">
+      <image src="../../images/comment.svg"></image>{{model.commentCnt}}
+      <image src="../../images/like.svg"></image>{{model.likeCnt}}
+    </view>
+  </view>
+  <view class="body">
+    <rich-text nodes="{{model.content}}"></rich-text>
+  </view>
+
+
+</view>
+<view >
+  <view class="tabBar">
+    <view class="index" bindtap="goToIndex">
+      <image src="../../images/info/index.svg"></image>首页</view>
+    <view class="share" bindtap="handleShare">
+      <image src="../../images/info/share.svg"></image>分享</view>
+    <view class="discuss-more" bindtap="handleMore">
+      <image src="../../images/info/more.svg"></image>更多</view>
+  </view>
+</view>

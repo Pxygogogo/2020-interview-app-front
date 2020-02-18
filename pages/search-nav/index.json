@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "avatar":"/components/avatar/index"
+    "avatar": "/components/avatar/index",
+    "job": "/components/job/index"
   }
 }

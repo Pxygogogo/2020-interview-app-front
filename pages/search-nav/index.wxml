@@ -9,12 +9,12 @@
 
 <view class="hot-position">
   <view class="title">热搜岗位</view>
-  <avatar></avatar>
+  <job hotJobUri="{{hotJobUri}}" ></job>
 </view>
 
 <view class="separate">
 </view>
 <view class="hot-company">
   <view class="title">热搜企业</view>
-  <avatar></avatar>
+  <avatar uri="{{uri}}" isTotal="{{isTotal}}"></avatar>
 </view>

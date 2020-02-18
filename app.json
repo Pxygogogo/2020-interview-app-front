@@ -1,8 +1,12 @@
 {
   "pages": [
-    "pages/index/index",
-    "components/avatar/index",
     "pages/search-nav/index",
+    "pages/company-info/index",
+    "pages/index/index",
+    "pages/discuss-info/index",
+    "pages/login/index",
+    "components/avatar/index",
+    "components/job/index",
     "components/article/index"
   ],
   "window": {

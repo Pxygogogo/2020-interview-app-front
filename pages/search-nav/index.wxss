@@ -35,7 +35,7 @@
 
 
 .hot-position{
-  height: 400rpx;
+  height: 440rpx;
   width: 100%;
   padding: 20rpx;
   padding-left: 0;

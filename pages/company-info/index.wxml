@@ -1,0 +1,16 @@
+<view class="title" >腾讯</view>
+<view class="body">
+  <article companyUri="{{companyUri}}" page="{{page}}" ></article>
+</view>
+
+
+<view >
+  <view class="tabBar">
+    <view class="index" bindtap="goToIndex">
+      <image src="../../images/info/index.svg"></image>首页</view>
+    <view class="share" bindtap="handleShare">
+      <image src="../../images/info/share.svg"></image>分享</view>
+    <view class="discuss-more" bindtap="handleMore">
+      <image src="../../images/info/more.svg"></image>更多</view>
+  </view>
+</view>

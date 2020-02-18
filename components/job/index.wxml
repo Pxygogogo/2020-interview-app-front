@@ -3,9 +3,7 @@
     <view class="img-box">
       <image src="{{item.iconUrl}}" class="img"></image>
     </view>
-    
     <text>{{item.name}}</text>
-    <text>共{{item.postCount}}篇</text>
   </view>
-  <slot></slot>
+  
 </view>

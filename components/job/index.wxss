@@ -7,10 +7,9 @@
 }
 
 .avatar-box{
-  width: 20%;
-  height: 230rpx;
+  width: 25%;
+  height: 180rpx;
   padding: 10rpx;
-  padding-top: 20rpx;
 }
 
 .img-box{

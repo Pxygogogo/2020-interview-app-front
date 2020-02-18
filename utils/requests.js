@@ -2,7 +2,7 @@ import { BASE_URL } from '../config.js';
 
 const request = (method, uri, data) => {
   const token = wx.getStorageSync('token');
-  console.log('get token', token);
+  // console.log('get token', token);
   return new Promise((resolve, reject) => {
     wx.request({
       url: `${BASE_URL}${uri}`,

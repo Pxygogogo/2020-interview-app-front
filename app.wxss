@@ -1,4 +1,3 @@
-
 .marginTopBottom {
   margin-top: 20rpx;
   margin-bottom: 30rpx;
@@ -19,7 +18,7 @@ view{
 
 .separate{
   width: 100%;
-  height: 30rpx;
+  height: 20rpx;
   background-color: #dfdfdf;
 }
 
@@ -46,4 +45,43 @@ view{
   display: block;
   text-align: center;
   font-size: 12px;
+}
+
+.active{
+  background-color: #f8f8f9;
+}
+
+
+/* tabBar样式 */
+
+.tabBar {
+  width: 100%;
+  height: 80rpx;
+  position: fixed;
+  background: #fff;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10rpx;
+  border-top: 1px solid #c5c8ce;
+
+}
+
+.tabBar image{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.index, .share, .discuss-more {
+  width: 33%;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.share{
+  border-left: 1px solid #c5c8ce;
+  border-right: 1px solid #c5c8ce;
 }
