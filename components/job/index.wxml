@@ -1,9 +1,14 @@
-<view class="container" >
-  <view wx:for="{{model}}" wx:key="name" class="avatar-box {{showId == item.id ? 'active' : ''}}" bindtap="handleJobInfo" data-id="{{item.id}}">
+<view class="container">
+  <view
+    wx:for="{{model}}"
+    wx:key="name"
+    class="avatar-box {{showId == item.id ? 'active' : ''}}"
+    bindtap="handleJobInfo"
+    data-id="{{item.id}}"
+  >
     <view class="img-box">
       <image src="{{item.iconUrl}}" class="img"></image>
     </view>
     <text>{{item.name}}</text>
   </view>
-  
 </view>

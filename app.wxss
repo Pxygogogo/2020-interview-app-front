@@ -3,54 +3,51 @@
   margin-bottom: 30rpx;
 }
 
-.title{
-  border-left: 5px solid #00B26A;
+.title {
+  border-left: 5px solid #00b26a;
   padding-left: 20px;
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 5px;
 }
 
-view{
+view {
   box-sizing: border-box;
 }
 
-
-.separate{
+.separate {
   width: 100%;
   height: 20rpx;
   background-color: #dfdfdf;
 }
 
-
 /* avatar组件 */
-.avatar-box{
+.avatar-box {
   width: 20%;
   height: 200rpx;
   padding: 10rpx;
   padding-top: 20rpx;
 }
 
-.img-box{
+.img-box {
   display: flex;
   justify-content: center;
   padding: 5rpx;
 }
-.img{
+.img {
   width: 90rpx;
   height: 90rpx;
 }
-.avatar-box text{
+.avatar-box text {
   margin-top: 8rpx;
   display: block;
   text-align: center;
   font-size: 12px;
 }
 
-.active{
+.active {
   background-color: #f8f8f9;
 }
-
 
 /* tabBar样式 */
 
@@ -65,15 +62,16 @@ view{
   align-items: center;
   padding: 10rpx;
   border-top: 1px solid #c5c8ce;
-
 }
 
-.tabBar image{
+.tabBar image {
   width: 40rpx;
   height: 40rpx;
 }
 
-.index, .share, .discuss-more {
+.index,
+.share,
+.discuss-more {
   width: 33%;
   font-size: 14px;
   display: flex;
@@ -81,18 +79,17 @@ view{
   justify-content: center;
 }
 
-.share{
+.share {
   border-left: 1px solid #c5c8ce;
   border-right: 1px solid #c5c8ce;
 }
-
 
 /* 
   ======== 
   搜索部分css 
   ========
 */
-.search{
+.search {
   width: 90%;
   height: auto;
   display: flex;
@@ -100,7 +97,7 @@ view{
   margin: 0rpx auto;
 }
 
-.search-left{
+.search-left {
   flex: 4;
   background-color: rgb(240, 240, 240);
   display: flex;
@@ -110,14 +107,14 @@ view{
   border-radius: 15rpx;
 }
 
-.search input{
+.search input {
   width: 90%;
   height: 100%;
   font-size: 29rpx;
   margin-left: 20rpx;
 }
 
-.icon-search{
+.icon-search {
   width: 10%;
   height: 50rpx;
 }

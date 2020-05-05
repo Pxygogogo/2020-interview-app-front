@@ -1,15 +1,11 @@
-
-
-
-.hot-position{
+.hot-position {
   height: 440rpx;
   width: 100%;
   padding: 20rpx;
   padding-left: 0;
 }
 
-
-.hot-company{
+.hot-company {
   width: 100%;
   min-height: 500rpx;
   padding: 20rpx;

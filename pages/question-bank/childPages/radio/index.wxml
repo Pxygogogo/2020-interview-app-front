@@ -1,0 +1,63 @@
+<scroll-view class="index-wrapper" scroll-y enable-flex>
+  <block wx:if="{{!completed || (completed && analyzed)}}">
+    <!-- title start-->
+    <view class="question-title">
+      <rich-text>
+        <text class="head"
+          >{{tag+1}}/{{questions.length}} ({{questions[tag].type === "single" ? "单选题" : "多选题"}})
+        </text>
+        {{questions[tag].title}}
+      </rich-text>
+    </view>
+    <!-- title end -->
+    <!-- description start -->
+    <view class="description">
+      <wemark md="{{questions[tag].question}}" link highlight type="wemark"></wemark>
+    </view>
+    <!-- description end -->
+    <!-- select options start -->
+    <view class="options-wrapper">
+      <view class="option" wx:for="{{questions[tag].choice}}" wx:key="index" bindtap="confirm" data-index="{{index}}">
+        <view class="character {{answer[tag] === index ? 'selected' : ''}}">{{charMap[index]}}</view>
+        <rich-text class="answer">{{item}}</rich-text>
+      </view>
+    </view>
+    <!-- select options end -->
+    <!-- analyze start -->
+    <block wx:if="{{completed && analyzed}}">
+      <view class="analyze-wrapper">
+        <block wx:if="{{questions[tag].answerIndex != answer[tag]}}">
+          <view class="wrong-tip"><text>您的答案:</text>{{charMap[complete_answer[tag]]}}</view>
+        </block>
+        <view class="correct-tip"><text>正确答案:</text>{{charMap[questions[tag].answerIndex]}}</view>
+        <view class="analyze-content">{{questions[tag].analyze}}</view>
+      </view>
+    </block>
+    <!-- analyze end -->
+    <!-- control start-->
+    <view class="control">
+      <button bindtap="go" data-direction="-1">上一题</button>
+      <button wx:if="{{tag !== questions.length - 1 }}" bindtap="go" data-direction="1">下一题</button>
+      <button wx:elif="{{analyzed && completed && tag === questions.length - 1}}" bindtap="back">完成答题</button>
+      <button wx:elif="{{!completed}}" bindtap="submit">提交</button>
+    </view>
+  </block>
+  <block wx:else if="{{!analyzed}}">
+    <view class="analyze-wrapper">
+      <view class="row-5">
+        <view
+          wx:for="{{complete_answer}}"
+          class="answer-box {{ item === complete_result[index] ? 'correct' : 'wrong'}}"
+          wx:key="index"
+        >
+          {{charMap[item]}}
+        </view>
+      </view>
+    </view>
+    <view class="control">
+      <button bindtap="back">结束答题</button>
+      <button bindtap="reTo" data-url="./index">查看解析</button>
+    </view>
+  </block>
+  <!-- control end -->
+</scroll-view>

@@ -1,8 +1,7 @@
-
-<view class="title" >热门企业</view>
+<view class="title">热门企业</view>
 <view class="nav">
   <avatar uri="{{uri}}" isTotal="{{isTotal}}" bind:showTab="showTab">
-    <view class="avatar-box" bindtap="goToMore" >
+    <view class="avatar-box" bindtap="goToMore">
       <view class="img-box">
         <image src="../../images/icons/more.svg" class="img"></image>
       </view>
@@ -10,8 +9,7 @@
     </view>
   </avatar>
 </view>
-<view class="separate">
-</view>
+<view class="separate"> </view>
 <view class="body">
-  <article articleUri="{{articleUri}}" page="{{page}}" ></article>
+  <article articleUri="{{articleUri}}" page="{{page}}"></article>
 </view>

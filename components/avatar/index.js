@@ -1,79 +1,67 @@
 // components/avater/index.js
 const app = getApp();
 Component({
-
   properties: {
     uri: {
       type: String,
       value: '',
       observer: function (newVal, oldVal) {
         this.propertiesChange(newVal, oldVal);
-      }
+      },
     },
     isTotal: Boolean,
   },
 
   data: {
     model: [],
-    showId:0
+    showId: 0,
   },
   methods: {
     async propertiesChange(newVal, oldVal) {
-      const res = await app.curl.get(newVal)
+      const res = await app.curl.get(newVal);
       const isTotal = this.properties.isTotal;
       //判断是否过期
-      if(res.code===-1){
-        wx.removeStorageSync('token')
+      if (res.code === -1) {
+        wx.removeStorageSync('token');
         wx.showModal({
           title: '登录过期',
           content: '您的登录信息已过期，请重新登录',
-          success(res){
-            if(res.confirm){
+          success(res) {
+            if (res.confirm) {
               wx.redirectTo({
                 url: '/pages/login/index',
-              })
-            }else{
-              
+              });
+            } else {
             }
-          }
-        }) 
+          },
+        });
       }
       //判断是否过期完成
       this.setData({
-        'model': isTotal ? res.data.data.planCommunitys : res.data.data.planCommunitys.slice(0, 9),
-      })
+        model: isTotal ? res.data.data.planCommunitys : res.data.data.planCommunitys.slice(0, 9),
+      });
     },
     handleCompanyInfo(e) {
       const id = e.currentTarget.dataset.id;
       const that = this;
       this.setData({
-        'showId': e.currentTarget.dataset.id
-      })
+        showId: e.currentTarget.dataset.id,
+      });
       wx.navigateTo({
         url: `/pages/company-info/index?id=${id}`,
         success(res) {
           that.setData({
-            'showId': 0
-          })
-        }
-      })
+            showId: 0,
+          });
+        },
+      });
     },
   },
-  
 
   lifetimes: {
-    created() {
+    created() {},
 
-    },
-
-    attached() {
-
-    },
-    ready() {
-
-    },
+    attached() {},
+    ready() {},
   },
-
-
-
-})
+});

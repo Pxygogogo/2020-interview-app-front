@@ -1,4 +1,4 @@
-.container{
+.container {
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -6,30 +6,30 @@
   flex-wrap: wrap;
 }
 
-.avatar-box{
+.avatar-box {
   width: 25%;
   height: 180rpx;
   padding: 10rpx;
 }
 
-.img-box{
+.img-box {
   display: flex;
   justify-content: center;
   padding: 5rpx;
 }
 
-.img{
+.img {
   width: 90rpx;
   height: 90rpx;
 }
 
-.avatar-box text{
+.avatar-box text {
   margin-top: 8rpx;
   display: block;
   text-align: center;
   font-size: 12px;
 }
 
-.active{
+.active {
   background-color: #f8f8f9;
 }

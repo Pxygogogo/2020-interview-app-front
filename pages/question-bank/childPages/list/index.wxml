@@ -1,0 +1,15 @@
+<view class="list-wrapper">
+  <view class="question-wrapper">
+    <view class="content-wrapper" wx:for="{{bct}}" wx:key="index">
+      <view class="question">
+        {{item.question}}
+      </view>
+      <view class="md-test" wx:if="{{item.test}}">
+        <wemark style="height: 100rpx;" md="{{item.test}}" link highlight type="wemark"></wemark>
+      </view>
+      <view class="tag">
+        编程题
+      </view>
+    </view>
+  </view>
+</view>

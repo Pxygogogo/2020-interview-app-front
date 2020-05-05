@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/question-bank/index",
     "pages/index/index",
     "pages/search/index",
     "pages/search-nav/index",
@@ -8,6 +9,7 @@
     "pages/login/index",
     "components/avatar/index",
     "components/job/index",
+    "pages/question-bank/childPages/radio/index",
     "components/article/index"
   ],
   "window": {
@@ -31,6 +33,12 @@
         "text": "搜索",
         "iconPath": "/images/icons/search.png",
         "selectedIconPath": "/images/icons/selectedSearch.png"
+      },
+      {
+        "pagePath": "pages/question-bank/index",
+        "text": "题库",
+        "iconPath": "/images/icons/examine.png",
+        "selectedIconPath": "/images/icons/examined.png"
       }
     ]
   },

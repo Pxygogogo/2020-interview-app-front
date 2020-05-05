@@ -1,18 +1,14 @@
 const app = getApp();
 
-
 Page({
-  
-  data: {
-
-  },
+  data: {},
 
   handleLogin({ detail }) {
     if (!~detail.errMsg.indexOf(':ok')) {
       wx.showModal({
         title: '错误',
         content: '请允许获取用户信息',
-        showCancel: false
+        showCancel: false,
       });
       return;
     }
@@ -22,7 +18,7 @@ Page({
         if (res.code === 0) {
           wx.showToast({
             title: '登录成功',
-            icon: 'success'
+            icon: 'success',
           });
           const { token, user } = res.data;
           app.user = user;
@@ -34,9 +30,8 @@ Page({
           wx.showModal({
             title: '错误',
             content: '登录失败',
-            showCancel: false
+            showCancel: false,
           });
-          
         }
       },
     });
@@ -46,13 +41,12 @@ Page({
     const res = await app.curl.get('/users/current-user');
     console.log(res);
   },
-  
-  onLoad(){
-    if (wx.getStorageSync('token')){
+
+  onLoad() {
+    if (wx.getStorageSync('token')) {
       wx.switchTab({
         url: '/pages/index/index',
       });
     }
-  }
-  
-})
+  },
+});

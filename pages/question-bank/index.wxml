@@ -1,0 +1,37 @@
+<view class="index-wrapper">
+  <!-- swiper start -->
+  <view class="swiper-wrapper">
+    <swiper>
+      <swiper-item>
+        <image src="../../images/swiper.jpg" alt="slider-item" style="height:100%;width=100%"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- swiper end -->
+  <!-- clock start -->
+  <view class="clock-wrapper">
+    <view
+      id="circle"
+      class="circle {{clock ? 'clocked' : ''}} {{touched ? 'touched' : 'untouched'}}"
+      bindtouchstart="touchStart"
+      bindanimationend="log"
+    >
+      <view>{{clock ? "已打卡" : "打卡"}}</view>
+      <view class="time" wx:if="{{!clock}}">{{hour}}:{{min}}:{{sec}}</view>
+    </view>
+  </view>
+  <!-- clock end  -->
+  <!-- box start -->
+  <view class="box-wrapper" bindtap="linkTo">
+    <block wx:for="{{(items.length / 3 ) | 0}}" wx:key="index">
+      <view class="row-3 sort">
+        <block wx:for="{{items.length / 2}}" wx:key="idx" wx:for-index="idx" wx:for-item="itm">
+          <view class="col-1" data-keyword="{{items[idx+index*3].keyword}}" data-type="{{items[idx+index*3].type}}"
+            >{{items[idx+index*3].name}}</view
+          >
+        </block>
+      </view>
+    </block>
+  </view>
+  <!-- box end -->
+</view>

@@ -3,7 +3,7 @@
 .article-box {
   width: 100%;
   border-bottom: 1px solid #e8eaec;
-  margin-top: 20rpx; 
+  margin-top: 20rpx;
 }
 
 .userInfo {
@@ -60,8 +60,7 @@
   padding-left: 10rpx;
 }
 
-.active{
+.active {
   background-color: #f8f8f9;
 }
 /* article组件 */
-

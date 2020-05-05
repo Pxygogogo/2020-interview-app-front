@@ -8,7 +8,7 @@ const request = (method, uri, data) => {
       url: `${BASE_URL}${uri}`,
       data,
       header: {
-        Authorization: `Bearer ${token}`
+        Authorization: `Bearer ${token}`,
       },
       method,
       success(res) {
@@ -17,7 +17,7 @@ const request = (method, uri, data) => {
       fail: resolve,
     });
   });
-}
+};
 
 export default {
   get: (uri, data) => request('GET', uri, data),
