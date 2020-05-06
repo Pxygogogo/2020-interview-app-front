@@ -18,10 +18,8 @@ const request = (method, uri, data) => {
     });
   });
 };
+export const get = (uri, data) => request('GET', uri, data);
+export const post = (uri, data) => request('POST', uri, data);
+export const put = (uri, data) => request('PUT', uri, data);
+export const del = (uri, data) => request('DELETE', uri, data);
 
-export default {
-  get: (uri, data) => request('GET', uri, data),
-  post: (uri, data) => request('POST', uri, data),
-  put: (uri, data) => request('PUT', uri, data),
-  delete: (uri, data) => request('DELETE', uri, data),
-};

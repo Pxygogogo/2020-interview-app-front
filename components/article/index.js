@@ -19,6 +19,7 @@ Component({
 
   methods: {
     async fetchDiscussMsg(newVal, oldVal) {
+      console.log(app.curl)
       const res = await app.curl.get(newVal);
       this.setData({
         model: res.data.discussPosts,
